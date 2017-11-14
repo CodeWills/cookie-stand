@@ -43,7 +43,17 @@ var seattleCenter = {
   custPerHour: function () {
     console.log('break',seattleCenter);
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
-  }
+  },
+  cookiesPerHour: function () {
+    var arr = [];
+    for (var i = 0; i < hours.length; i++){
+      console.log('custPerHour =' , this.custPerHour());
+      console.log('this.avgSale = ', this.avgSale);
+      console.log(this.custPerHour() * this.avgSale);
+      arr.push(this.custPerHour() * this.avgSale);
+    }
+    return arr;
+  },
 };
 
 var capHill = {
@@ -54,7 +64,17 @@ var capHill = {
   custPerHour: function () {
     console.log('break',capHill);
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
-  }
+  },
+  cookiesPerHour: function () {
+    var arr = [];
+    for (var i = 0; i < hours.length; i++){
+      console.log('custPerHour =' , this.custPerHour());
+      console.log('this.avgSale = ', this.avgSale);
+      console.log(this.custPerHour() * this.avgSale);
+      arr.push(this.custPerHour() * this.avgSale);
+    }
+    return arr;
+  },
 };
 
 var alki = {
@@ -65,5 +85,5 @@ var alki = {
   custPerHour: function () {
     console.log('break',alki);
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
-  }
+  },
 };
