@@ -32,7 +32,17 @@ var seaTac = {
   custPerHour: function () {
     console.log('break',seaTac);
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
-  }
+  },
+  cookiesPerHour: function () {
+    var arr = [];
+    for (var i = 0; i < hours.length; i++){
+      console.log('custPerHour =' , this.custPerHour());
+      console.log('this.avgSale = ', this.avgSale);
+      console.log(this.custPerHour() * this.avgSale);
+      arr.push(this.custPerHour() * this.avgSale);
+    }
+    return arr;
+  },
 };
 
 var seattleCenter = {
@@ -85,5 +95,15 @@ var alki = {
   custPerHour: function () {
     console.log('break',alki);
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
+  },
+  cookiesPerHour: function () {
+    var arr = [];
+    for (var i = 0; i < hours.length; i++){
+      console.log('custPerHour =' , this.custPerHour());
+      console.log('this.avgSale = ', this.avgSale);
+      console.log(this.custPerHour() * this.avgSale);
+      arr.push(this.custPerHour() * this.avgSale);
+    }
+    return arr;
   },
 };
