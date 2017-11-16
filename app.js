@@ -80,3 +80,15 @@ new Store('Capitol Hill', 20, 38, 2.3);
 new Store('Alki', 2, 16, 4.6);
 
 createTable();
+
+var formEl = document.getElementById('form1');
+function onSubmit(event) {
+event.preventDefault();
+var formStuff = {
+  fName: event.target.fName.value
+  fMin: parseInt(event.target.fMin.value)
+  fMax: parseInt(event.target.fMax.value)
+  fAvg: parseInt(event.target.fAvg.value)
+};
+new Store()
+}
