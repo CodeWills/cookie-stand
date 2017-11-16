@@ -79,17 +79,26 @@ new Store('Seattle Center', 11, 38, 3.7);
 new Store('Capitol Hill', 20, 38, 2.3);
 new Store('Alki', 2, 16, 4.6);
 
+createTable();
+
+var form1 = document.getElementById('form1');
+
 function onSubmit(event) {
   event.preventDefault();
-  var name = this.elements['fName'].value;
-  var minCust = parseInt(this.elements['fMin'].value);
-  var maxCust = parseInt(this.elements['fMax'].value);
-  var avgCookies = parseFloat(this.elements['fAvg'].value);
-  var newStore = new Store(name, minCust, maxCust, avgCookies);
-  console.log(newStore.name, newStore.minCust , newStore.maxCust , newStore.avgCookies);
-  newStore.createTable();
-}
-var form1 = document.getElementById('form1');
-form1.addEventListener('submit',onSubmit);
+  var formStuff = {};
+  formStuff.name = event.target.name.value;
+  formStuff.minCust = parseInt(event.target.min.value);
+  formStuff.maxCust = parseInt(event.target.max.value);
+  formStuff.avgCookies = parseFloat(event.target.avg.value);
+  console.log('stuff',formStuff);
 
-createTable();
+  var newS = new Store(formStuff.name, formStuff.minCust, formStuff.maxCust, formStuff.avgCookies);
+  console.log(newS);
+
+  let tbleEl = document.getElementById('table1');
+  tbleEl.innerHTML = '';
+  createTable();
+
+}
+
+form1.addEventListener('submit',onSubmit);
