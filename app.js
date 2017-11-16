@@ -79,16 +79,17 @@ new Store('Seattle Center', 11, 38, 3.7);
 new Store('Capitol Hill', 20, 38, 2.3);
 new Store('Alki', 2, 16, 4.6);
 
-createTable();
-
-var formEl = document.getElementById('form1');
 function onSubmit(event) {
-event.preventDefault();
-var formStuff = {
-  fName: event.target.fName.value
-  fMin: parseInt(event.target.fMin.value)
-  fMax: parseInt(event.target.fMax.value)
-  fAvg: parseInt(event.target.fAvg.value)
-};
-new Store()
+  event.preventDefault();
+  var name = this.elements['fName'].value;
+  var minCust = parseInt(this.elements['fMin'].value);
+  var maxCust = parseInt(this.elements['fMax'].value);
+  var avgCookies = parseFloat(this.elements['fAvg'].value);
+  var newStore = new Store(name, minCust, maxCust, avgCookies);
+  console.log(newStore.name, newStore.minCust , newStore.maxCust , newStore.avgCookies);
+  newStore.createTable();
 }
+var form1 = document.getElementById('form1');
+form1.addEventListener('submit',onSubmit);
+
+createTable();
