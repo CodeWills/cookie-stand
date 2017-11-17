@@ -8,17 +8,19 @@
   <header>
   </header>
   <main>
-    <div id ="start">
-      <ul id = "1"></ul>
-      <ul id = "2"></ul>
-      <ul id = "3"></ul>
-      <ul id = "4"></ul>
-      <ul id = "5"></ul>
-    </div>
+    <table id="table1"> </table>
+    <h2>New Store</h2>
+    <form id="form1">
+      <p>New Store Name: <input name ="name" type="text" required="required"></p>
+      <p>Maximum Customer: <input name ="min" min ="0" type="number" required="required"></p>
+      <p>Minimum Customer: <input name ="max" min ="0" type="number" required="required"></p>
+      <p>Average Cookies per Customer: <input name ="avg" min ="0" step="0.1" type="number" required="required"></p>
+      <p> <button type="submit" name="submit">Submit</button>
+    </form>
   </main>
-</body>
-<footer>
-</footer>
-<script src="app.js"></script>
+  </body>
+  <footer>
+  </footer>
+  <script src="app.js"></script>
 
-</html>
+  </html>
