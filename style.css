@@ -1,24 +1,81 @@
-/* RESETS */
-/** {
-  position: static;
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-  font-family: monoton;
-  font-size: 2vw;
-}*/
-
-/* BASE STYLES */
-/**head, script, link {
-  display: none;
-}*/
 
 * {
-font-family: 'Monoton', cursive;
+font-family: 'Amaranth', sans-serif;
 font-size: 16px;
+}
+
+html{
+  margin: 10px;
+  padding: 5px;
+  background-color: gray;
+}
+header {
+  border-bottom-style: solid;
+  background-color: lightgray;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom: 10px;
+
+}
+#aboutMe{
+  border-bottom-style: solid;
+  background-color: lightgray;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom: 10px;
+}
+#aboutH2{
+  position: relative;
+  left: 1000px;
+  top:25px;
+}
+#aboutText{
+display: inline-block;
+width: 400px;
+border: 3px solid black;
+padding: 60px;
+margin: 15px;
+margin-top: -30px;
+border-radius: 10px;
+background-color: lightgray;
+font-family: helvetica;
+float: right;
+}
+.headSec{
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  background-image: url(assets/fish.jpg);
+  opacity: 0.5;
+  font-weight: bold;
+  border: solid black;
+}
+#merch{
+  background-color: lightgray;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+#aboutImg{
+  width: 500px;
+}
+#merchH2{
+  position: relative;
+  left: 1000px;
+  top:25px;
+}
+#merchText{
+  display: inline-block;
+  width: 400px;
+  border: 3px solid black;
+  padding: 60px;
+  margin: 15px;
+  margin-top: -30px;
+  border-radius: 10px;
+  background-color: lightgray;
+  font-family: helvetica;
+  float: right;
 }
