@@ -1,0 +1,55 @@
+* {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.headimg{
+  float: right;
+
+}
+
+
+html{
+  background-color: gray;
+}
+
+table, td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 15px;
+  empty-cells: show;
+}
+
+tr{
+  background-color: black;
+
+}
+
+input {
+  margin: auto;
+  padding: 10px;
+  font-size: 10px;
+  border: 2px solid black;
+  color: black;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 1px;
+  font-family: 'Amaranth', sans-serif;
+  color: black;
+  background-image: url(assets/chinook.jpg);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
